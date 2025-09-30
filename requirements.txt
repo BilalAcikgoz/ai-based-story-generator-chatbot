@@ -1,0 +1,21 @@
+# FastAPI
+fastapi
+uvicorn[standard]
+pydantic>=2.0
+pydantic-settings
+python-multipart
+
+# LLM & ML
+transformers
+torch
+accelerate
+huggingface-hub
+
+# Utilities
+python-dotenv
+pandas
+numpy
+
+# Testing
+pytest
+httpx
