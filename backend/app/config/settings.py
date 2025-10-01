@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     ]
     
     # LLM Settings
-    model_name: str = "gpt3-turbo"  # Base model
+    model_name: str = "gpt2"  # Base model
     fine_tuned_model_path: Optional[str] = "./models/fine_tuned"
     use_fine_tuned: bool = False
     max_length: int = 512
