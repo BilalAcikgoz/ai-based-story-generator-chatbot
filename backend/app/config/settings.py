@@ -5,7 +5,7 @@ from pydantic_settings import BaseSettings
 class Settings(BaseSettings):    
     # API Settings
     api_host: str = "0.0.0.0"
-    api_port: int = 8000
+    api_port: int = 8001
     debug: bool = True
     
     # CORS Settings
@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     ]
     
     # LLM Settings
-    model_name: str = "gpt3-turbo"  # Base model
+    model_name: str = "gpt2"  # Base model
     fine_tuned_model_path: Optional[str] = "./models/fine_tuned"
     use_fine_tuned: bool = False
     max_length: int = 512
