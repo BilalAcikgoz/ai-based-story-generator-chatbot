@@ -5,7 +5,7 @@ from pydantic_settings import BaseSettings
 class Settings(BaseSettings):    
     # API Settings
     api_host: str = "0.0.0.0"
-    api_port: int = 8001
+    api_port: int = 8000
     debug: bool = True
     
     # CORS Settings
