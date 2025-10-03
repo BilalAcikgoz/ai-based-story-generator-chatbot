@@ -11,7 +11,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 # Create FastAPI app
 app = FastAPI(
-    title="Children's AI Story Chatbot",
+    title="AI BASED STORY GENERATOR CHATBOT",
     description="AI-powered story generator for children",
     version="1.0.0"
 )
@@ -42,7 +42,7 @@ async def root():
 
 if __name__ == "__main__":
     uvicorn.run(
-        app,
+        "main:app",
         host=settings.api_host,
         port=settings.api_port,
         reload=settings.debug
