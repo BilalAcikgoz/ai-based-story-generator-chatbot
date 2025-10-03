@@ -208,3 +208,7 @@ __marimo__/
 
 # data
 data/
+
+# node.js
+node_modules/
+package-lock.json
