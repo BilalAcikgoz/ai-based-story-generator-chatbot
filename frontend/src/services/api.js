@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8000/api';
+// Production'da nginx proxy kullanacak
+const API_BASE_URL = '/api';
 
 export const chatAPI = {
   sendMessage: async (message, sessionId = null) => {

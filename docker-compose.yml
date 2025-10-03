@@ -1,0 +1,36 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: story-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - DEBUG=False
+      - MODEL_NAME=gpt2
+    volumes:
+      - ./backend/models:/app/models
+      - ./backend/data:/app/data
+    restart: unless-stopped
+    networks:
+      - story-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: story-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - story-network
+
+networks:
+  story-network:
+    driver: bridge
