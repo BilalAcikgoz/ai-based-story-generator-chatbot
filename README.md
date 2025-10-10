@@ -25,29 +25,6 @@ User Message → Chat State Machine → RAG Context → Fine-tuned LLM → Safe 
 - **Frontend**: Vue.js 3 + Tailwind CSS
 - **Memory**: In-memory conversation storage
 
-## 📁 Project Structure
-
-```
-childrens-ai-story-chatbot/
-├── backend/
-│   ├── app/
-│   │   ├── api/              # FastAPI endpoints
-│   │   ├── services/         # Business logic (Chat, LLM, RAG, Story)
-│   │   ├── core/             # Core components (Prompts, State Machine, Config)
-│   │   ├── models/           # Data models
-│   │   ├── utils/            # Utilities (Validation, Text Processing)
-│   │   └── config/           # Configuration
-│   ├── data/                 # Datasets and prompts
-│   ├── models/               # Trained model files
-│   ├── notebooks/            # Jupyter notebooks for experimentation
-│   └── scripts/              # Training and data processing scripts
-└── frontend/
-    └── src/
-        ├── components/       # Vue components (Chat Interface, Messages)
-        ├── services/         # API communication
-        └── stores/           # State management
-```
-
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -341,5 +318,3 @@ For questions and support:
 - [ ] Personalization engine
 
 ---
-
-*Last updated: December 2024*
